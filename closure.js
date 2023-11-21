@@ -42,3 +42,27 @@ function s() {
 }
 let j = 44;
 s();
+
+//Using var(global scope)
+function p() {
+    for(var i= 1; i<=5; i++) {
+        setTimeout(function(){
+            console.log(i);
+
+        },i*1000);
+    }
+    console.log("Hello!!!");
+}
+p();
+
+//Using let(block scope)
+function v() {
+    for(let i= 1; i<=5; i++) {
+        setTimeout(function(){
+            console.log(i);
+
+        },i*1000);
+    }
+    console.log("Hello!!!");
+}
+v();

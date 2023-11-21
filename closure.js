@@ -66,3 +66,15 @@ function v() {
     console.log("Hello!!!");
 }
 v();
+
+
+function ab(){
+    for(let k=1 ; k<=5; k++) {
+        setTimeout(function(){
+            console.log(k);
+
+        },k*2000);
+    }
+    console.log("Here's my new code");
+}
+ab();

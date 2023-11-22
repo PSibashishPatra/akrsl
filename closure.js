@@ -1,3 +1,5 @@
+
+//closures
 function x() {
     var a = 12 ;
     //let b = 15 ;
@@ -78,3 +80,18 @@ function ab(){
     console.log("Here's my new code");
 }
 ab();
+
+function abc() {
+    for(var i = 1 ; i <= 5 ; i++) {
+        function close(h) {
+            setTimeout(function() {
+                console.log(h);
+            }, x * 1000)
+        }
+        close(i);
+    }
+    console.log("Hey there !!!");
+}
+abc();
+
+

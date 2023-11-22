@@ -131,3 +131,15 @@ abc();
   count1.incrementCounter();
   count1.decrementCounter();
   count1.decrementCounter();
+
+
+  //closure and garbage collector
+  function a(){
+    var x = 0 , z = 10 ;
+    return function b() {
+        console.log(x);
+    }
+  }//z is collevcted by the garbage collector and it will not be present in the memory if we try to get the value of z
+  
+  var y = a();
+  y();

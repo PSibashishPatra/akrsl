@@ -95,3 +95,20 @@ function abc() {
 abc();
 
 
+//data hiding using closures
+ function counter() {
+    var count = 0;
+    return function incrementCounter(){
+        count++;
+        console.log(count);
+
+    }
+ }
+  var counter1 = counter();
+  counter1();
+  counter1();
+  
+  //counter2 doesn't affect the scope of counter1 and start the function calling from initial value of count i.e,count = 0 
+
+  var counter2 = counter();
+  counter2();

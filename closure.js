@@ -112,3 +112,22 @@ abc();
 
   var counter2 = counter();
   counter2();
+
+  //or (for scalable reasons)
+
+  function Counter(){
+    var count = 0 ;
+    this.incrementCounter = function(){
+        count++;
+        console.log(count);
+
+    }
+    this.decrementCounter = function(){
+        count--;
+        console.log(count);
+    }
+  }
+  var count1 = new Counter();
+  count1.incrementCounter();
+  count1.decrementCounter();
+  count1.decrementCounter();

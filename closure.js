@@ -139,7 +139,7 @@ abc();
     return function b() {
         console.log(x);
     }
-  }//z is collevcted by the garbage collector and it will not be present in the memory if we try to get the value of z
+  }//z is collected by the garbage collector and it will not be present in the memory if we try to get the value of z
   
   var y = a();
   y();
